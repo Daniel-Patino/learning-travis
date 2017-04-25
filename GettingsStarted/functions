@@ -1,0 +1,66 @@
+var dice = require("./dice");
+
+var myPropertiesFunction = dice.game;
+
+console.log(myPropertiesFunction);
+console.log(myPropertiesFunction.roll());
+console.log(myPropertiesFunction.roll());
+console.log(myPropertiesFunction.roll());
+console.log(myPropertiesFunction.count);
+
+// var dieSim = function(dieSize)
+// {
+//     return Math.ceil(dieSize * Math.random());
+// };
+
+// var showResult = function()
+// {
+//     console.log(firstDie);
+//     console.log(seconDie);
+// }
+// ;
+// var rankResults = function(dieRoll)
+// {
+//     if((dieRoll == 1 && dieRoll == 6))
+//     {
+//         console.log("Great Role!");
+//     }
+// };
+
+// var myArray = [1, 2, 3, "Pizza"];
+
+// for(var i = 0; i < myArray.length; i++)
+// {
+//     //console.log(myArray[i]);
+// };
+
+// var myPropertiesFunction =
+// {
+//     size: 6,
+//     count: 0,
+//     roll: function()
+//     {
+//         var result = Math.ceil(this.size * Math.random());
+//         this.count += 1;
+//         return result;
+//     }
+// };
+
+//var firstDie = dieSim(6);
+//var seconDie = dieSim(6);
+//var thirdDie = myPropertiesFunction.roll(6);
+
+//showResult();
+
+//rankResults(firstDie);
+//rankResults(seconDie);
+
+//console.log(myPropertiesFunction.size);
+//console.log(myPropertiesFunction.count);
+
+// console.log(myPropertiesFunction);
+// console.log(myPropertiesFunction.roll());
+// console.log(myPropertiesFunction.roll());
+// console.log(myPropertiesFunction.roll());
+// console.log(myPropertiesFunction.count);
+//console.log(thirdDie);

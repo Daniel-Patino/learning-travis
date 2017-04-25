@@ -1,0 +1,37 @@
+var book = require("./lib/gradebook").book;
+var express = require("express");
+var app = express();
+
+app.get("/", function(request, response)
+{
+    response.send("Hello, World!");
+})
+
+app.get("/grade", function(request, response)
+{
+    var grades = request.query.grades.split(",");
+    for(var i = 0; i < grades.length; i += 1)
+    {
+        book.addGrade(parseInt(grades[i]));
+    }
+
+    var average = book.getAverage();
+    var letter = book.getLetterGrade();
+
+    book.reset();
+
+    response.send("Your average is " + average
+        + " with letter grade, " + letter); 
+})
+
+app.listen(3000);
+console.log("Server Ready...");
+
+
+
+// for(var i = 2; i < process.argv.length; i += 1)
+// {
+//     book.addGrade(parseInt(process.argv[i]));
+// }
+
+// console.log(book.getAverage());

@@ -1,0 +1,27 @@
+
+var x = 3, y = 5;
+var result = 3 > 5;
+var type = typeof 10.5;
+var z = '3';
+
+console.log(x > y);
+console.log(typeof result);
+console.log(type);
+console.log(typeof z);
+
+result = z + x;
+console.log(z + x);
+console.log(typeof result);
+
+result = (parseInt(z) + x)
+console.log(parseInt(z) + x);
+console.log(typeof result);
+
+var writeGreeting = function(name) 
+{
+    var message = "Hello, " + name + "!";
+    console.log(message);
+}
+
+writeGreeting("Daniel");
+writeGreeting("Keith");

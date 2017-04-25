@@ -1,0 +1,13 @@
+var myPropertiesFunction =
+{
+    size: 6,
+    count: 0,
+    roll: function()
+    {
+        var result = Math.ceil(this.size * Math.random());
+        this.count += 1;
+        return result;
+    }
+};
+
+exports.game = myPropertiesFunction;
